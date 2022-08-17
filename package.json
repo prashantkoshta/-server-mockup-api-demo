@@ -1,15 +1,15 @@
 {
   "name": "server-mockup-api-demo",
   "description": "server-mockup-api-demo",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "server-mockup-api --port=8081 --db=./mock-json/db --routes=./mock-json/routes --delayInResponse=0"
+    "start": "server-mockup-api --port=8081 --db=./mock-json/db --routes=./mock-json/routes --delayInResponse=0 --middlewares='../../../middlewares/sample-middleware1,../../../middlewares/sample-middleware2'"
   },
   "repository": "https://github.com/prashantkoshta/server-mockup-api-demo.git",
   "author": "Prashant Koshta <prashantkoshta@users.noreply.github.com>",
   "license": "MIT",
   "devDependencies": {
-    "server-mockup-api": "^0.0.5"
+    "server-mockup-api": "^0.0.9-alpha-0"
   }
 }
